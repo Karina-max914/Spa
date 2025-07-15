@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Centro de Estetica</title>
+    <link rel="stylesheet" href="estilos.css">
+    </head>
+<body>
+    <header id="main-header"><!--Identifico y estilizo el encabezado principal-->
+        <div class="container header-content">
+            <h1 class="logo"><a href="#hero">Armonía Estética</a></h1>
+
+            <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#tratamientos">Tratamientos</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <img src="https://via.placeholder.com/1200x500/ADD8E6/FFFFFF?text=Bienvenida+Armon%C3%ADa+Est%C3%A9tica" alt="Ambiente relajante del centro de estética">
+        <div class="hero-caption">
+            <h2>Descubre tu Belleza Interior</h2>
+            <p>Tratamientos personalizados para una experiencia única.</p>
+            <a href="#tratamientos" class="btn">Explorar Tratamientos</a>
+        </div>
+    </section>
+
+    <section id="tratamientos" class="treatments-section container">
+        <h2>Nuestros Tratamientos Estelares</h2>
+        <div class="treatment-grid">
+            <div class="treatment-card">
+                <img src="https://via.placeholder.com/300x200/B0E0E6/000000?text=Facial" alt="Tratamiento facial">
+                <h3>Limpieza Facial Profunda</h3>
+                <p>Purifica y revitaliza tu piel.</p>
+                <div class="card-overlay">
+                    <p>Eliminación de impurezas, hidratación y masajes. Ideal para todo tipo de piel.</p>
+                    <a href="#contacto" class="btn">Reservar</a>
+                </div>
+            </div>
+            <div class="treatment-card">
+                <img src="https://via.placeholder.com/300x200/FFC0CB/000000?text=Masaje" alt="Masaje relajante">
+                <h3>Masajes Relajantes</h3>
+                <p>Libera tensiones y estrés.</p>
+                <div class="card-overlay">
+                    <p>Técnicas variadas para aliviar el dolor muscular y promover el bienestar.</p>
+                    <a href="#contacto" class="btn">Reservar</a>
+                </div>
+            </div>
+            <div class="treatment-card">
+                <img src="https://via.placeholder.com/300x200/DA70D6/000000?text=Laser" alt="Depilación láser">
+                <h3>Depilación Láser Diódo</h3>
+                <p>Resultados duraderos y piel suave.</p>
+                <div class="card-overlay">
+                    <p>Tecnología avanzada para la eliminación eficaz y segura del vello no deseado.</p>
+                    <a href="#contacto" class="btn">Reservar</a>
+                </div>
+            </div>
+            <div class="treatment-card">
+                <img src="https://via.placeholder.com/300x200/F0E68C/000000?text=Corporal" alt="Tratamiento corporal">
+                <h3>Tratamientos Corporales</h3>
+                <p>Moldea y reafirma tu figura.</p>
+                <div class="card-overlay">
+                    <p>Reducción de celulitis, envolturas y radiofrecuencia para una silueta definida.</p>
+                    <a href="#contacto" class="btn">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="gallery-section container">
+        <h2>Nuestra Galería</h2>
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/300x200/E6E6FA/000000?text=Imagen+1" alt="Imagen de galería 1">
+            <img src="https://via.placeholder.com/300x200/ADD8E6/000000?text=Imagen+2" alt="Imagen de galería 2">
+            <img src="https://via.placeholder.com/300x200/FFDAB9/000000?text=Imagen+3" alt="Imagen de galería 3">
+            <img src="https://via.placeholder.com/300x200/98FB98/000000?text=Imagen+4" alt="Imagen de galería 4">
+        </div>
+    </section> 
+    <section id="contacto" class="contact-section container">
+        <h2>Contáctanos y Agenda tu Cita</h2>
+        <form id="appointment-form" class="appointment-form">
+            <div class="form-group">
+                <label for="name">Nombre Completo: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="email">Email: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="treatment">Tratamiento de Interés: <span class="required">*</span></label>
+                <select id="treatment" name="treatment" required aria-required="true">
+                    <option value="">Selecciona un tratamiento</option>
+                    <option value="facial">Limpieza Facial Profunda</option>
+                    <option value="masaje">Masajes Relajantes</option>
+                    <option value="laser">Depilación Láser Diódo</option>
+                    <option value="corporal">Tratamientos Corporales</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Fecha Preferida:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje Adicional:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn submit-btn">Solicitar Cita</button>
+            <p class="form-static-message">Los campos marcados con <span class="required">*</span> son obligatorios.</p>
+        </form>
+
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Dirección: Av. Principal 123, Ciudad, País</p>
+            <p><i class="fas fa-phone-alt"></i> Teléfono: +XX XXX XXXX XXX</p>
+            <p><i class="fas fa-envelope"></i> Email: info@armoniaestetica.com</p>
+        </div>
+    </section>
+
+    <a href="#main-header" class="scroll-to-top-link">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Armonía Estética. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
